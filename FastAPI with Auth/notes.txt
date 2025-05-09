@@ -1,0 +1,32 @@
+Reminder:
+    - Add .github/workflows/build.yml from another project
+    - cd server, then "uv venv", and "uv sync"
+
+
+Example ./.env:
+# FastAPI settings
+SECRET_KEY = 
+REFRESH_SECRET_KEY = 
+ALGORITHM = HS256
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+REFRESH_TOKEN_EXPIRE_DAYS = 7
+FRONTEND_URL = 
+LOCAL_URL = 
+
+# Auth Database settings
+AUTH_DB_HOST = 
+AUTH_DB_PORT = 
+AUTH_DB_NAME = 
+AUTH_DB_USER = 
+AUTH_DB_PASSWORD = 
+
+# Database settings
+DB_HOST = 
+DB_PORT = 
+DB_NAME = 
+DB_USER = 
+DB_PASSWORD = 
+
+Example ./client/.env:
+# React settings
+VITE_API_TARGET = https://localhost:8080

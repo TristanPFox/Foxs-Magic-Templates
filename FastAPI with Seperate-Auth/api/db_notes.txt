@@ -1,0 +1,7 @@
+# Getting perms on db:
+    1. Connect via psql to 'doadmin' account
+    2. Run the following (using user 'fox' and db 'qrfs_cataloger' in this example)
+
+    ALTER DATABASE qrfs_cataloger OWNER TO fox;
+    GRANT CONNECT ON DATABASE qrfs_cataloger TO fox;
+    GRANT ALL ON DATABASE qrfs_cataloger TO fox;

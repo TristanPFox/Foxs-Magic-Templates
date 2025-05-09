@@ -1,0 +1,77 @@
+.navbar {
+  width: 80px;
+  height: 100vh; /* Full viewport height */
+  padding: var(--mantine-spacing-md);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+  z-index: 50;
+}
+
+.navbarMain {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.link {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--mantine-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+
+  &:hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-5));
+  }
+
+  &[data-active] {
+    &,
+    &:hover {
+      background-color: var(--mantine-color-blue-light);
+      color: var(--mantine-color-blue-light-color);
+    }
+  }
+}
+
+.burgerContainer {
+  display: none;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.navbarContainer {
+  position: relative;
+}
+
+/* Always visible burger icon */
+.burgerContainer {
+  position: fixed;
+  top: var(--mantine-spacing-md);
+  right: var(--mantine-spacing-md);
+  z-index: 9999;
+}
+
+/* By default, hide the entire navbar on small screens */
+@media (max-width: 768px) {
+  .navbar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .burgerContainer {
+    display: block;
+  }
+
+  .navbarMain {
+    margin-top: 20px;
+  }
+
+  .navbar.open {
+    transform: translateX(0);
+  }
+}

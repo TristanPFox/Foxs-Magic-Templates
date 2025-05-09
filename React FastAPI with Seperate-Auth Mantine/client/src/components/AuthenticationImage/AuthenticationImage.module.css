@@ -1,0 +1,24 @@
+.wrapper {
+  min-height: 900px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/2000"); /* 2000px (replace later) */
+}
+
+.form {
+  border-right: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-7));
+  min-height: 900px;
+  max-width: 450px;
+  padding-top: 80px;
+  height: 100vh;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+}

@@ -1,0 +1,16 @@
+[project]
+name = "mantine-full-stack-with-auth-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "black>=25.1.0",
+    "cryptography>=44.0.3",
+    "fastapi>=0.115.12",
+    "jinja2>=3.1.6",
+    "pydantic>=2.11.4",
+    "python-dotenv>=1.1.0",
+    "pytz>=2025.2",
+    "uvicorn>=0.34.2",
+]

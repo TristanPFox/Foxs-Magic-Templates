@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.workZone {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-top: var(--mantine-spacing-xl);
+}
+
+.centeredContent {
+  width: 100%;
+  max-width: 2560px; /* Adjust as needed */
+  padding: var(--mantine-spacing-sm);
+}
+
+.pageTitle {
+  font-size: rem(50px);
+  font-weight: 900;
+  letter-spacing: rem(-2px);
+}
